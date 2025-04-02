@@ -46,5 +46,5 @@
       "types": "./dist/docx-preview.d.ts"
     }
   },
-  "types": "dist/docx-preview.d.ts"
+  "types": "dist/**/*.d.ts"
 }
