@@ -2,7 +2,8 @@
   "compilerOptions": {
     "module": "ES2022",
     "moduleResolution": "bundler",
-    "declaration": false,
+    "declaration": true,
+    "outDir": "./dist",
     "noImplicitAny": false,
     "noEmitOnError": true,
     "pretty": true,
