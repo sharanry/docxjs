@@ -30,8 +30,8 @@
     "typescript": "^5.0.3"
   },
   "scripts": {
-    "build": "rollup --config rollup.config.mjs",
-    "build-prod": "rollup --config rollup.config.mjs --environment BUILD:production",
+    "build": "tsc -p tsconfig.json",
+    "build-prod": "tsc -p tsconfig.json",
     "watch": "rollup --config rollup.config.mjs --watch",
     "e2e": "karma start karma.conf.cjs --single-run",
     "e2e-watch": "karma start karma.conf.cjs"
