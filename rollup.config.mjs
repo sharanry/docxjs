@@ -15,7 +15,11 @@ export default args => {
 	const config = {
 		input: 'src/docx-preview.ts',
 		output: [umdOutput],
-		plugins: [typescript()]
+		plugins: [typescript({
+        declaration: true,
+        declarationDir: 'dist',
+        rootDir: 'src'
+      })]
 	}
 
 	if (args.environment == 'BUILD:production')
